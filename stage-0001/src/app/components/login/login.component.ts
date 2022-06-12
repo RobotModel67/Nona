@@ -24,9 +24,19 @@ export class LoginComponent implements OnInit {
   constructor( private service:CustomersService, private router:Router) { }
 
   ngOnInit(): void {
+    this.checkCurrentUser();
+  }
+
+  checkCurrentUser() {
+    if(localStorage.getItem("currentUser")){
+      let legacyId = localStorage.getItem("currentUser");
+      this.router.navigate(["dashboard/" + legacyId]);
+    }
   }
 
   onLogin(userForm: any) {
+    console.log(userForm)
+
     let login = { 
       username: userForm.userControl!,
       password: userForm.pwdControl!
@@ -34,10 +44,11 @@ export class LoginComponent implements OnInit {
     //this.router.navigate(['dashboard']);
 
     //console.log(login)
-    this.service.loginOperation(userForm).subscribe(
+    this.service.loginOperation(login).subscribe(
       data => {
-        console.log(data)
-        //this.router.navigate(['dashboard']);
+        console.log(data);
+        localStorage.setItem("currentUser", data.legacyId.toString());
+        this.router.navigate(['dashboard', data.legacyId]);
       });
   }
 
