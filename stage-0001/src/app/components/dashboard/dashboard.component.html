@@ -1,1 +1,28 @@
-<p>dashboard works!</p>
+<app-header></app-header>
+
+<div class="container">
+<table class="table table-sm table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Acción</th>
+        <th scope="col">Proceso</th>
+        <th scope="col">Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let source of sources">
+        <th scope="row">{{source.id}}</th>
+        <td>{{source.name}}</td>
+        <td>{{source.description}}</td>
+        <td><app-uploader></app-uploader></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-footer></app-footer>

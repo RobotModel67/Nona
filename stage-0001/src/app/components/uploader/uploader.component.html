@@ -1,0 +1,6 @@
+<input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
+<div class="file-upload">
+    <button type="button" class="btn btn-outline-secondary btn-sm" (click)="fileUpload.click()">Cargar</button>
+    {{fileName || "No cargado"}}
+</div>
+

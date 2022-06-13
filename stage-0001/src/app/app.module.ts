@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UploaderComponent } from './components/uploader/uploader.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     //NewComponent,
     //EditComponent
     routingComponents,
+    UploaderComponent,
   ],
   imports: [
     BrowserModule,

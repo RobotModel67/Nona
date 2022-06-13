@@ -9,7 +9,7 @@ import { EditComponent  } from './components/edit/edit.component';
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
   {path:'login', component:LoginComponent},
-  {path:'dashboard', component:DashboardComponent},
+  {path:'dashboard/:legacyId', component:DashboardComponent},
   {path:'new', component:NewComponent},
   {path:'edit', component:EditComponent}
 ];

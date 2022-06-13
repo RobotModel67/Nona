@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { CustomersService } from '../../services/core/customers.service';
+import { Sarc2Service } from '../../services/core/sarc2.service';
 import { LoginI } from '../../models/login.interface';
 
 import { Router } from '@angular/router';
@@ -12,8 +12,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 
-
-
 export class LoginComponent implements OnInit {
 
   loginForm = new FormGroup({
@@ -21,7 +19,7 @@ export class LoginComponent implements OnInit {
       pwdControl : new FormControl('', Validators.required)
   });
 
-  constructor( private service:CustomersService, private router:Router) { }
+  constructor( private service:Sarc2Service, private router:Router) { }
 
   ngOnInit(): void {
     this.checkCurrentUser();

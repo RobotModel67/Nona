@@ -1,4 +1,6 @@
 export interface LoginResponseI {
-    status:string;
-    response:string;
+    id: number,
+    name: string,
+    legacyId: 1    
+    token:string;
 }
