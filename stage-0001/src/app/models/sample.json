@@ -1,0 +1,668 @@
+{
+    "schedule": {
+       "id": 1,
+       "uuid": "d5a14043-1dd4-431a-87c7-e21e1283e3af",
+       "processId": 1,
+       "name": "Precierre Mayo 2022",
+       "desciption": null,
+       "startDate": "2022-06-21T05:00:00.000+00:00",
+       "finalDate": "2022-06-24T05:00:00.779+00:00",
+       "state": 0,
+       "active": true,
+       "processInstance": null
+    },
+    "process": {
+       "id": 1,
+       "scheduleId": 1,
+       "uuid": "E15BFC33D490F35BE0539114000A1344",
+       "processId": 1,
+       "process": {
+          "id": 1,
+          "uuid": "59636870-2ad2-42b4-887f-90f1ddc861a3",
+          "name": "Precierre",
+          "description": "XXXXXXXX",
+          "active": true
+       },
+       "operations": [
+          {
+             "id": 1,
+             "uuid": "E15BFC33D491F35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 1,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 1,
+                "uuid": null,
+                "processId": 1,
+                "name": "Notificaciones",
+                "description": null,
+                "active": true,
+                "order": 1
+             },
+             "activities": []
+          },
+          {
+             "id": 2,
+             "uuid": "E15BFC33D492F35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 2,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 2,
+                "uuid": null,
+                "processId": 1,
+                "name": "Cargue Información",
+                "description": null,
+                "active": true,
+                "order": 2
+             },
+             "activities": [
+                {
+                   "id": 1,
+                   "uuid": "E15BFC33D493F35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 1,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 1,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 1",
+                      "description": null,
+                      "active": true,
+                      "order": 1
+                   },
+                   "tasks": [
+                      {
+                         "id": 1,
+                         "uuid": "E15BFC33D494F35BE0539114000A1344",
+                         "activityInstanceId": 1,
+                         "taskId": 1,
+                         "state": 1,
+                         "startDate": "2022-06-14T01:04:16.000+00:00",
+                         "closeDate": null,
+                         "evidences": null,
+                         "task": {
+                            "id": 1,
+                            "uuid": null,
+                            "activityId": 1,
+                            "name": "Validar información archivo",
+                            "description": null,
+                            "active": true,
+                            "order": 1,
+                            "commandType": 1,
+                            "command": null,
+                            "parameters": null
+                         }
+                      },
+                      {
+                         "id": 2,
+                         "uuid": "E15BFC33D495F35BE0539114000A1344",
+                         "activityInstanceId": 1,
+                         "taskId": 2,
+                         "state": 1,
+                         "startDate": "2022-06-14T01:04:16.000+00:00",
+                         "closeDate": null,
+                         "evidences": null,
+                         "task": {
+                            "id": 2,
+                            "uuid": null,
+                            "activityId": 1,
+                            "name": "Crear tabla temporal",
+                            "description": null,
+                            "active": true,
+                            "order": 2,
+                            "commandType": 1,
+                            "command": null,
+                            "parameters": null
+                         }
+                      },
+                      {
+                         "id": 3,
+                         "uuid": "E15BFC33D496F35BE0539114000A1344",
+                         "activityInstanceId": 1,
+                         "taskId": 3,
+                         "state": 1,
+                         "startDate": "2022-06-14T01:04:16.000+00:00",
+                         "closeDate": null,
+                         "evidences": null,
+                         "task": {
+                            "id": 3,
+                            "uuid": null,
+                            "activityId": 1,
+                            "name": "Copiar datos a tabla temporal",
+                            "description": null,
+                            "active": true,
+                            "order": 3,
+                            "commandType": 1,
+                            "command": null,
+                            "parameters": null
+                         }
+                      },
+                      {
+                         "id": 4,
+                         "uuid": "E15BFC33D497F35BE0539114000A1344",
+                         "activityInstanceId": 1,
+                         "taskId": 4,
+                         "state": 1,
+                         "startDate": "2022-06-14T01:04:16.000+00:00",
+                         "closeDate": null,
+                         "evidences": null,
+                         "task": {
+                            "id": 4,
+                            "uuid": null,
+                            "activityId": 1,
+                            "name": "Validación registros",
+                            "description": null,
+                            "active": true,
+                            "order": 4,
+                            "commandType": 1,
+                            "command": null,
+                            "parameters": null
+                         }
+                      },
+                      {
+                         "id": 5,
+                         "uuid": "E15BFC33D498F35BE0539114000A1344",
+                         "activityInstanceId": 1,
+                         "taskId": 5,
+                         "state": 1,
+                         "startDate": "2022-06-14T01:04:16.000+00:00",
+                         "closeDate": null,
+                         "evidences": null,
+                         "task": {
+                            "id": 5,
+                            "uuid": null,
+                            "activityId": 1,
+                            "name": "Copiar a tabla final",
+                            "description": null,
+                            "active": true,
+                            "order": 5,
+                            "commandType": 1,
+                            "command": null,
+                            "parameters": null
+                         }
+                      },
+                      {
+                         "id": 6,
+                         "uuid": "E15BFC33D499F35BE0539114000A1344",
+                         "activityInstanceId": 1,
+                         "taskId": 6,
+                         "state": 1,
+                         "startDate": "2022-06-14T01:04:16.000+00:00",
+                         "closeDate": null,
+                         "evidences": null,
+                         "task": {
+                            "id": 6,
+                            "uuid": null,
+                            "activityId": 1,
+                            "name": "Elminar tabla temporal",
+                            "description": null,
+                            "active": true,
+                            "order": 6,
+                            "commandType": 1,
+                            "command": null,
+                            "parameters": null
+                         }
+                      },
+                      {
+                         "id": 7,
+                         "uuid": "E15BFC33D49AF35BE0539114000A1344",
+                         "activityInstanceId": 1,
+                         "taskId": 7,
+                         "state": 1,
+                         "startDate": "2022-06-14T01:04:16.000+00:00",
+                         "closeDate": null,
+                         "evidences": null,
+                         "task": {
+                            "id": 7,
+                            "uuid": null,
+                            "activityId": 1,
+                            "name": "Borrar archivo",
+                            "description": null,
+                            "active": true,
+                            "order": 7,
+                            "commandType": 1,
+                            "command": null,
+                            "parameters": null
+                         }
+                      }
+                   ]
+                },
+                {
+                   "id": 2,
+                   "uuid": "E15BFC33D49BF35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 2,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 2,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 2",
+                      "description": null,
+                      "active": true,
+                      "order": 2
+                   },
+                   "tasks": []
+                },
+                {
+                   "id": 3,
+                   "uuid": "E15BFC33D49CF35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 3,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 3,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 3",
+                      "description": null,
+                      "active": true,
+                      "order": 3
+                   },
+                   "tasks": []
+                },
+                {
+                   "id": 4,
+                   "uuid": "E15BFC33D49DF35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 4,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 4,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 4",
+                      "description": null,
+                      "active": true,
+                      "order": 4
+                   },
+                   "tasks": []
+                },
+                {
+                   "id": 5,
+                   "uuid": "E15BFC33D49EF35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 5,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 5,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 5",
+                      "description": null,
+                      "active": true,
+                      "order": 5
+                   },
+                   "tasks": []
+                },
+                {
+                   "id": 6,
+                   "uuid": "E15BFC33D49FF35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 6,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 6,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 6",
+                      "description": null,
+                      "active": true,
+                      "order": 6
+                   },
+                   "tasks": []
+                },
+                {
+                   "id": 7,
+                   "uuid": "E15BFC33D4A0F35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 7,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 7,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 7",
+                      "description": null,
+                      "active": true,
+                      "order": 7
+                   },
+                   "tasks": []
+                },
+                {
+                   "id": 8,
+                   "uuid": "E15BFC33D4A1F35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 8,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 8,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 8",
+                      "description": null,
+                      "active": true,
+                      "order": 8
+                   },
+                   "tasks": []
+                },
+                {
+                   "id": 9,
+                   "uuid": "E15BFC33D4A2F35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 9,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 9,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 9",
+                      "description": null,
+                      "active": true,
+                      "order": 9
+                   },
+                   "tasks": []
+                },
+                {
+                   "id": 10,
+                   "uuid": "E15BFC33D4A3F35BE0539114000A1344",
+                   "operationInstanceId": 2,
+                   "activityId": 10,
+                   "state": 1,
+                   "startDate": "2022-06-14T01:04:16.000+00:00",
+                   "closeDate": null,
+                   "evidences": null,
+                   "activity": {
+                      "id": 10,
+                      "uuid": null,
+                      "operationId": 2,
+                      "name": "Cargar Archivo 10",
+                      "description": null,
+                      "active": true,
+                      "order": 10
+                   },
+                   "tasks": []
+                }
+             ]
+          },
+          {
+             "id": 3,
+             "uuid": "E15BFC33D4A4F35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 3,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 3,
+                "uuid": null,
+                "processId": 1,
+                "name": "Procesos de Cartera",
+                "description": null,
+                "active": true,
+                "order": 3
+             },
+             "activities": []
+          },
+          {
+             "id": 4,
+             "uuid": "E15BFC33D4A5F35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 4,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 4,
+                "uuid": null,
+                "processId": 1,
+                "name": "Procesos Complementarios",
+                "description": null,
+                "active": true,
+                "order": 4
+             },
+             "activities": []
+          },
+          {
+             "id": 5,
+             "uuid": "E15BFC33D4A6F35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 5,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 5,
+                "uuid": null,
+                "processId": 1,
+                "name": "Proceso Clientes",
+                "description": null,
+                "active": true,
+                "order": 5
+             },
+             "activities": []
+          },
+          {
+             "id": 6,
+             "uuid": "E15BFC33D4A7F35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 6,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 6,
+                "uuid": null,
+                "processId": 1,
+                "name": "Inserción Acumulado Historico",
+                "description": null,
+                "active": true,
+                "order": 6
+             },
+             "activities": []
+          },
+          {
+             "id": 7,
+             "uuid": "E15BFC33D4A8F35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 7,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 7,
+                "uuid": null,
+                "processId": 1,
+                "name": "Segmentación",
+                "description": null,
+                "active": true,
+                "order": 7
+             },
+             "activities": []
+          },
+          {
+             "id": 8,
+             "uuid": "E15BFC33D4A9F35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 8,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 8,
+                "uuid": null,
+                "processId": 1,
+                "name": "Generación Modelos Internos Comercial",
+                "description": null,
+                "active": true,
+                "order": 8
+             },
+             "activities": []
+          },
+          {
+             "id": 9,
+             "uuid": "E15BFC33D4AAF35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 9,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 9,
+                "uuid": null,
+                "processId": 1,
+                "name": "Generación Modelo Referencia Comercial",
+                "description": null,
+                "active": true,
+                "order": 9
+             },
+             "activities": []
+          },
+          {
+             "id": 10,
+             "uuid": "E15BFC33D4ABF35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 10,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 10,
+                "uuid": null,
+                "processId": 1,
+                "name": "Proceso de Garantias",
+                "description": null,
+                "active": true,
+                "order": 10
+             },
+             "activities": []
+          },
+          {
+             "id": 11,
+             "uuid": "E15BFC33D4ACF35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 11,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 11,
+                "uuid": null,
+                "processId": 1,
+                "name": "Cálculo Modelo Comercial AOG",
+                "description": null,
+                "active": true,
+                "order": 11
+             },
+             "activities": []
+          },
+          {
+             "id": 12,
+             "uuid": "E15BFC33D4ADF35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 12,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 12,
+                "uuid": null,
+                "processId": 1,
+                "name": "Reporte Guía Técnica MRC",
+                "description": null,
+                "active": true,
+                "order": 12
+             },
+             "activities": []
+          },
+          {
+             "id": 13,
+             "uuid": "E15BFC33D4AEF35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 13,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 13,
+                "uuid": null,
+                "processId": 1,
+                "name": "Aprobación de Cifras",
+                "description": null,
+                "active": true,
+                "order": 13
+             },
+             "activities": []
+          },
+          {
+             "id": 14,
+             "uuid": "E15BFC33D4AFF35BE0539114000A1344",
+             "processInstanceId": 1,
+             "operationId": 14,
+             "state": 1,
+             "startDate": "2022-06-14T01:04:16.000+00:00",
+             "closeDate": null,
+             "evidences": null,
+             "operation": {
+                "id": 14,
+                "uuid": null,
+                "processId": 1,
+                "name": "Publicación Automática de Reportes",
+                "description": null,
+                "active": true,
+                "order": 14
+             },
+             "activities": []
+          }
+       ],
+       "startDate": "2022-06-14T01:04:16.000+00:00",
+       "closeDate": null,
+       "state": 1
+    }
+ }

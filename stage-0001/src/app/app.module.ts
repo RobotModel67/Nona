@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UploaderComponent } from './components/uploader/uploader.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { UploaderComponent } from './components/uploader/uploader.component';
     //EditComponent
     routingComponents,
     UploaderComponent,
+    ScheduleComponent,
   ],
   imports: [
     BrowserModule,

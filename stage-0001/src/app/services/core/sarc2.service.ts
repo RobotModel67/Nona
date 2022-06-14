@@ -9,6 +9,8 @@ import {IfileUpload} from '../../models/fileUpload.Iinterface';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { IScheduleInstance } from 'src/app/models/scheduleInstance.interface';
+
 
 
 @Injectable({
@@ -32,4 +34,8 @@ export class Sarc2Service {
     return this.http.get<ISource[]>(address);
   }
 
+  getScheduleInstance(uuid:string):Observable<IScheduleInstance>{
+    let address = this.url + "schedules/instances/" + uuid;
+    return this.http.get<IScheduleInstance>(address);
+  }
 }

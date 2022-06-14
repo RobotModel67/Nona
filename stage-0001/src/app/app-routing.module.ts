@@ -4,6 +4,7 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NewComponent } from './components/new/new.component';
 import { EditComponent  } from './components/edit/edit.component';
+import { ScheduleComponent  } from './components/schedule/schedule.component';
 
 
 const routes: Routes = [
@@ -11,7 +12,9 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'dashboard/:legacyId', component:DashboardComponent},
   {path:'new', component:NewComponent},
-  {path:'edit', component:EditComponent}
+  {path:'edit', component:EditComponent},
+  {path:'schedule', component:ScheduleComponent}
+
 ];
 
 @NgModule({
@@ -19,4 +22,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [LoginComponent,DashboardComponent,NewComponent,EditComponent];
+export const routingComponents = [LoginComponent,DashboardComponent,NewComponent,EditComponent,ScheduleComponent];

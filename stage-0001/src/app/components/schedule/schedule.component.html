@@ -1,0 +1,61 @@
+<app-header></app-header>
+
+<div class="container">
+  <div>
+    <h1>{{info?.schedule?.name}}</h1>
+    <span>Inicio: {{info?.schedule?.startDate}}</span><span> - Cierre: {{info?.schedule?.finalDate}}</span>
+    <h6>Información del proceso: {{info?.process?.process?.name}} Instancia: {{info?.process?.uuid}}</h6>
+    <h5></h5>
+  </div>
+  <h4>Operaciones \ Actividades \ Tareas</h4>
+  <ul>
+    <li *ngFor="let operation of info?.process?.operations">
+        <span>{{operation.operation.name}}</span>
+        <ul>
+        <li *ngFor="let activity of operation.activities">
+          <span>{{activity.activity.name}}</span>
+          <ul>
+            <li *ngFor="let task of activity.tasks">
+              <span><strong>{{task.task.name}}: </strong>. cmd_type: {{task.task.commandType}}. cmd: {{task.task.command}}. params: {{task.task.parameters}}</span>
+            </li>
+           </ul>          
+        </li>
+       </ul>
+    </li>
+      
+  </ul>
+  <br/>
+<!--
+<table class="table table-sm table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Operación</th>
+        <th scope="col">Actividad</th>
+        <th scope="col">Tarea</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Evidencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let operation of info?.process?.operations">
+        <th scope="row">{{operation.operation.uuid}}</th>
+        <td>{{operation.operation.name}}</td>
+        <td>
+          <div *ngFor="let activity of operation.activities">
+            {{activity.activity.name}}
+            <div *ngFor="let task of activity.tasks">
+              {{task.task.name}}
+            </div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+-->
+
+</div>
+<app-footer></app-footer>
